@@ -1,0 +1,38 @@
+﻿<Window x:Class="Prakt5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakt5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="214" Width="501" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Расчет">
+                <MenuItem Header="Сравнение триад" Click="Sravnenie"></MenuItem>
+                <MenuItem Header="Изменить параметры" Click="Parametr"></MenuItem>
+                <MenuItem Header="Увеличить значения на 10" Click="Uvelich"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Справка" Click="Spravka"></MenuItem>
+            <MenuItem Header="Выйти" Click="Quit"></MenuItem>
+        </Menu>
+        <TextBox x:Name="FirstChis" HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SecondChis" HorizontalAlignment="Left" Margin="10,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ThreeChis" HorizontalAlignment="Left" Margin="10,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NovF" HorizontalAlignment="Left" Margin="177,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NovS" HorizontalAlignment="Left" Margin="177,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NovT" HorizontalAlignment="Left" Margin="177,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="FirSecondTriada" HorizontalAlignment="Left" Margin="347,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SecSecondTriada" HorizontalAlignment="Left" Margin="347,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ThrSecondTriada" HorizontalAlignment="Left" Margin="347,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="1ое число 1ой триады" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,26,0,0"/>
+        <Label Content="2ое число 1ой триады" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,64,0,0"/>
+        <Label Content="3ое число 1ой триады" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,107,0,0"/>
+        <Label Content="Новое 1ое число" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="177,26,0,0"/>
+        <Label Content="Новое 2ое число" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="177,64,0,0"/>
+        <Label Content="Новое 3ое число" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="177,107,0,0"/>
+        <Label Content="1ое число 2ой триады" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,26,0,0"/>
+        <Label Content="2ое число 2ой триады" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,70,0,0"/>
+        <Label Content="3ое число 2ой триады" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,108,0,0"/>
+    </Grid>
+</Window>
