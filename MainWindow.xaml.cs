@@ -24,17 +24,17 @@ namespace Prakt5
         {
             InitializeComponent();
         }
-        Triad triada = new Triad();
+        Triad triada = new Triad(); // общий создание объект класса  класса 
 
         private void Sravnenie(object sender, RoutedEventArgs e)
         {
             try
             {
-                Triad triada2 = new Triad();
+                Triad triada2 = new Triad();// внутри скобок создаание объект класса  класса 
                 Int32.TryParse(FirstChis.Text, out int first); Int32.TryParse(SecondChis.Text, out int second); Int32.TryParse(ThreeChis.Text, out int three);
-                triada.First = first; triada.Second = second; triada.Three = three;
+                triada.First = first; triada.Second = second; triada.Three = three; // заполнение  триады (свойства) 
                 Int32.TryParse(FirSecondTriada.Text, out int firstt2); Int32.TryParse(SecSecondTriada.Text, out int secondt2); Int32.TryParse(ThrSecondTriada.Text, out int threet2);
-                triada2.First = firstt2; triada2.Second = secondt2; triada2.Three = threet2;
+                triada2.First = firstt2; triada2.Second = secondt2; triada2.Three = threet2; //заполнение  2 триады 
                 if (triada.Srav(triada2))
                 {
                     MessageBox.Show("Первая триада больше второй триады");
@@ -49,7 +49,7 @@ namespace Prakt5
 
         private void Parametr(object sender, RoutedEventArgs e)
         {
-            try
+            try//Замена
             {
                 Int32.TryParse(NovF.Text, out int novfirst); Int32.TryParse(NovS.Text, out int novsecond); Int32.TryParse(NovT.Text, out int novthree);
                 if (NovF.Text != "" && NovS.Text != "" && NovT.Text != "") triada.SetParams(novfirst, novsecond, novthree);
@@ -67,7 +67,7 @@ namespace Prakt5
         {
             try
             {
-                triada.SetParams();
+                triada.SetParams();// на 10
                 FirstChis.Text = Convert.ToString(triada.First); SecondChis.Text = Convert.ToString(triada.Second); ThreeChis.Text = Convert.ToString(triada.Three);
             }
             catch

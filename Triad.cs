@@ -24,7 +24,7 @@ namespace Prakt5
             Second += 10;
             Three += 10;
         }
-        public void SetParams(int first)
+        public void SetParams(int first)//Перегрузка
         {
             First = first;
         }
